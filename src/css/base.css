@@ -64,6 +64,7 @@ h3{
 p{
     font-family: var(--main-font), var(--fallback-font);
     font-weight: 400;
+    text-align: justify;
     font-size: 15px; /* 17px large */
     color: var(--black-color);
     margin-bottom: var(--spacing-medium);

@@ -1,18 +1,22 @@
+/* -- MOBILE STYLE -- */
 .logo h2 {
     margin-bottom: 0px;
     padding-bottom: 0;
     color: var(--white-color);
+    transition: color 0.5s ease;
 }
 
 .logo p {
     margin: 0;
     margin-top: -15px;
     color: var(--white-color);
+    transition: color 0.5s ease;
 }
 
-/* -- MOBILE STYLE -- */
 .navigation {
     display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .off-screen-menu>ul>li>a {
@@ -62,11 +66,34 @@
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    padding-top: 20px; 
     background-color: transparent;
-    padding-top: 30px;
-    position: relative;
+    transition: background-color 0.5s ease;
     z-index: 10;
+    box-sizing: border-box;
 }
+
+.scrolled{
+    background-color: var(--white-color);
+}
+
+.scrolled-text{
+    color: var(--black-color) !important;
+}
+
+.scrolled-ham{
+    background-color: var(--black-color) !important;
+}
+
+.scrolled-hr{
+    background-color: var(--white-color);
+}
+
 
 header>hr {
     margin: 0;
@@ -104,7 +131,7 @@ header>hr.active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: 0.2s ease;
+    transition: 0.2s ease, background-color 0.5s ease;
 }
 
 .ham-menu span:nth-child(1) {

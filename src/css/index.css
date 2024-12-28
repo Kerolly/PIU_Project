@@ -1,4 +1,8 @@
 /* -- Hero -- */
+.hero{
+    height: 100vh;
+}
+
 .hero-img img{
     position: absolute;
     width: 100%;
@@ -34,4 +38,25 @@
 .hero .text h1{
     color: var(--white-color);
     font-weight: 500;
+}
+
+
+/* -- Specialty -- */
+
+.specialty-img img{
+    width: 80%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.specialty-img{
+    text-align: center;
+}
+
+.specialty-text h2{
+    margin-bottom: 40px;
+}
+
+.specialty button{
+    margin-top: 40px;
 }
