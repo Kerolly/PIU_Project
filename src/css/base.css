@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* -- colors -- */
+    --primary-color: #26466F;
+    --secondary-color: #F3E5AB;
+    --accent-color: #FBC153;
+    --grey-color: #E0E0E0;
+    --black-color: #17191B;
+    --white-color: #FFFFFF;
+
+    /* -- fonts -- */
+    --main-font: 'Lora', serif;
+    --fallback-font: serif;
+
+    /* -- spacing -- */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+    
+}
+
+/* -- global style -- */
+body{
+    color: var(--black-color);
+    font-family: var(--main-font), var(--fallback-font);
+    font-size: 15px;
+    margin: 0;
+    padding: 0 30px;
+}
+
+
+/* -- MOBILE -- */
+
+/* -- titles -- */
+h1{
+    font-family: var(--main-font), var(--fallback-font);
+    font-weight: 700;
+    font-size: 35px; /* 40px large */
+    color: var(--black-color);
+    margin-bottom: var(--spacing-medium);
+}
+
+h2{
+    font-family: var(--main-font), var(--fallback-font);
+    font-weight: 600;
+    font-size: 25px; /* 35px large */
+    color: var(--black-color);
+    margin-bottom: var(--spacing-small);
+}
+
+h3{
+    font-family: var(--main-font), var(--fallback-font);
+    font-weight: 600;
+    font-size: 18px; /* 18px large */
+    color: var(--black-color);
+}
+
+p{
+    font-family: var(--main-font), var(--fallback-font);
+    font-weight: 400;
+    font-size: 15px; /* 17px large */
+    color: var(--black-color);
+    margin-bottom: var(--spacing-medium);
+}
+
+.note{
+    font-family: var(--main-font), var(--fallback-font);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--black-color);
+}
+
+
+a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+/* -- link -- */
+a:hover{
+    color: #393a3c;
+}
+
+
+/* -- button -- */
+
+button{
+    font-family: var(--main-font), var(--fallback-font);
+    font-weight: 500;
+    font-size: 15px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    /* height: 60px; */
+    padding: 10px 35px;
+    border: none;
+    border-radius: 7px;
+    
+}
+
+
+button:hover{
+    background-color: #4B617F;
+}
+
+button.active{
+    background-color: #1B3456;
+}
+
+
+/* -- SMALL TABLETS -- */
+@media screen and (min-width: 620px){
+
+    body{
+        padding: 0 40px;
+    }
+
+}
+
+
+/* -- LARGE TABLETS & LAPTOPS -- */
+@media screen and (min-width: 960px){
+    body{
+        padding: 0 55px;
+    }
+    
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    button{
+        font-size: 17px;
+    }
+
+}
+
+
+/* -- DESKTOP -- */
+@media screen and (min-width: 1440px){
+    body{
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 70;
+    }
+}
