@@ -1,9 +1,9 @@
 /* -- Hero -- */
-.hero{
+.hero {
     height: 100vh;
 }
 
-.hero-img img{
+.hero-img img {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -14,7 +14,7 @@
     z-index: 1;
 }
 
-.hero-img::after{
+.hero-img::after {
     content: "";
     position: absolute;
     background-color: rgba(23, 25, 27, 0.70);
@@ -26,7 +26,7 @@
     z-index: 2;
 }
 
-.hero .text{
+.hero .text {
     position: absolute;
     z-index: 2;
     display: flex;
@@ -35,7 +35,7 @@
     align-items: center;
 }
 
-.hero .text h1{
+.hero .text h1 {
     color: var(--white-color);
     font-weight: 500;
 }
@@ -43,20 +43,117 @@
 
 /* -- Specialty -- */
 
-.specialty-img img{
+.specialty-img img {
     width: 80%;
     margin-top: 70px;
     margin-bottom: 50px;
 }
 
-.specialty-img{
+.specialty-img {
     text-align: center;
 }
 
-.specialty-text h2{
+.specialty-text h2 {
     margin-bottom: 40px;
 }
 
-.specialty button{
+.specialty button {
     margin-top: 40px;
+}
+
+
+/* -- Call to action -- */
+
+.call-to-action {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.call-to-action-img img {
+    width: calc(100% + 60px);
+    margin: 0 -30px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.call-to-action-img {
+    position: relative;
+}
+
+.call-to-action-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(23, 25, 27, 0.70);
+    backdrop-filter: blur(5px);
+    width: calc(100% + 60px);
+    margin: 0 -30px;
+    height: 220px;
+}
+
+.call-to-action button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.call-to-action button {
+    width: 60%;
+    border: 1px solid var(--accent-color);
+    background-color: transparent;
+}
+
+.call-to-action button:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+
+/* -- Dishes -- */
+/* Carousel */
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+
+.carousel-item {
+    flex: none;
+    scroll-snap-align: start;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.carousel-item h3 {
+    margin: 20px 0 10px;
+}
+
+.dishes{
+    text-align: center;
+}
+
+.dishes button{
+    margin-top: 70px;
+}
+
+.dishes h1{
+    margin-bottom: 40px;
 }
