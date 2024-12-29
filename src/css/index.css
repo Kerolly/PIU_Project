@@ -132,6 +132,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    position: relative;
 }
 
 .carousel-item img {
@@ -146,14 +147,126 @@
     margin: 20px 0 10px;
 }
 
+.carousel-item p{
+    margin: 0 10px;
+}
+
+
 .dishes{
     text-align: center;
 }
 
 .dishes button{
     margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .dishes h1{
     margin-bottom: 40px;
+}
+
+
+/* -- Reservation -- */
+
+.rezervation{
+    width: calc(100% + 60px);
+    height: 100%;
+    margin: 0 -30px;
+    background-image: url(../../assets/img/rivior/contact-section-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.rezervation-content{
+    padding: 40px 30px 50px 30px;
+}
+
+.reservation-table{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 50px 0;
+}
+
+.reservation-table-content{
+    padding: 35px 22px;
+}
+
+.reservation-table-content h2{
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.reservation-table-content p{
+    color: var(--white-color);
+    margin-bottom: 8px;
+}
+
+.thank-you{
+    text-align: center;
+}
+
+/* Form */
+
+#name{
+    width: 100%;
+}
+
+#phone{
+    width: 100%;
+}
+
+#persons {
+    width: 50%;
+}
+
+#time{
+    width: 50%;
+}
+
+.form-item-row{
+    display: flex;
+    gap: 35px
+}
+
+#date{
+    width: 100%;
+}
+
+form input{
+    height: 35px;
+    margin-top: 25px;
+    border: 2px solid var(--white-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: var(--white-color);
+    font-size: 20px;
+    font-family: var(--main-font), var(--fallback-font);
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+/* ----- */
+
+.schedule, .breakfast, .lunch-dinner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.schedule-items > p > span{
+    font-weight: 600;
+}
+
+.rezervation > p{
+    margin: 0 30px;
+    margin-bottom: 50px;
 }
