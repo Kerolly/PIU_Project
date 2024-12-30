@@ -30,6 +30,7 @@
     position: absolute;
     z-index: 2;
     display: flex;
+    flex-direction: column;
     height: calc(100vh - 100px);
     justify-content: center;
     align-items: center;
@@ -38,6 +39,10 @@
 .hero .text h1 {
     color: var(--white-color);
     font-weight: 500;
+}
+
+.hero .text p{
+    display: none;
 }
 
 
@@ -350,4 +355,23 @@ footer {
 
 .copyright p:nth-child(2){
     font-weight: 600;
+}
+
+
+/* -- SMALL TABLETS -- */
+@media screen and (min-width: 620px){
+    
+
+}
+
+
+/* -- LARGE TABLETS & LAPTOPS -- */
+@media screen and (min-width: 960px){
+
+}
+
+
+/* -- DESKTOP -- */
+@media screen and (min-width: 1440px){
+
 }
