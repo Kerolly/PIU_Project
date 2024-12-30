@@ -561,6 +561,14 @@ footer {
     }
 
     /* Hero */
+    .hero-img img{
+        max-width: 2500px;
+    }
+
+    .hero-img::after{
+        max-width: 2500px;
+    }
+
     .hero .text{
         width: 90%;
     }
