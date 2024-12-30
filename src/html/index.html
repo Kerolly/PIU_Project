@@ -15,7 +15,8 @@
 <body>
 
     <header>
-        <div class="navigation">
+        <!-- Mobile navigation -->
+        <div class="navigation mobile-nav">
             <div class="logo">
                 <h2>Rivior.</h2></br>
                 <p class="note">Finețe. Prospețime</p>
@@ -36,7 +37,45 @@
                 <span></span>
             </div>
         </div>
-        <hr>
+        <hr class="mobile-hr">
+
+        <!-- Desktop navigation -->
+        <section class="top-nav">
+
+            <div class="top-nav-contact">
+                <img src="../../assets/icons/furculita.svg" alt="Furculita icon">
+                <div class="top-nav-contact-items">
+                    <a href="mailto:comenzi@rivior.com">comenzi@rivior.com</a></br>
+                    <a href="tel:+407770211026">+40 770 211 026</a>
+                </div>
+            </div>
+
+            <div class="top-nav-logo">
+                <h2 style="margin-bottom: 0;">Rivior.</h2></br>
+                <p class="note" style="margin-top: -15px;">Finețe. Prospețime</p>
+            </div>
+
+            <div class="top-nav-location">
+                <a href="http://maps.com" target="_blank" rel="noopener noreferrer">Str. Alecsandritu 18 </br> Bihor,
+                    Oradea</a>
+                <img src="../../assets/icons/location.svg" alt="Locatie icon">
+            </div>
+        </section>
+
+        <section class="desktop-nav-bar">
+            <hr>
+            <div class="desktop-nav-bar-content">
+                <ul>
+                    <li class="desktop-nav-items"><a href="../html/index.html">Rivior</a></li>
+                    <li class="desktop-nav-items"><a href="../html/restaurant.html">Restaurant</a></li>
+                    <li class="desktop-nav-items"><a href="../html/meniu.html">Meniu</a></li>
+                    <li class="desktop-nav-items"><a href="../html/echipa.html">Echipa</a></li>
+                    <li class="desktop-nav-items"><a href="../html/contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+        </section>
+
     </header>
 
     <section class="hero">
@@ -50,9 +89,12 @@
         </div>
     </section>
 
-    <section class="specialty">
+    <section class="specialty grid">
         <div class="specialty-img">
             <img src="../../assets/img/rivior/speciality-img2.jpeg" alt="Poza preparat">
+            <img src="../../assets/img/rivior/speciality-img1.jpeg" alt="Poza reprezentativa">
+            <img src="../../assets/img/rivior/speciality-img3.jpeg" alt="Poza reprezentativa">
+            <img src="../../assets/img/rivior/speciality-img4.jpeg" alt="Poza reprezentativa">
         </div>
         <div class="specialty-text">
             <h2>Specialitatea restaurantului</h2>
@@ -64,8 +106,9 @@
                 Într-un decor elegant și contemporan, meniul nostru te invită să savurezi preparate emblematice precum
                 file de vită cu mousse de trufe și sos demi-glace, fiecare creat cu o atenție meticuloasă la detalii. La
                 Rivior, fiecare masă este o poveste rafinată, creată special pentru a celebra momentele deosebite.</p>
+            <button>Alfă mai multe</button>
         </div>
-        <button>Alfă mai multe</button>
+
     </section>
 
     <section class="call-to-action">
@@ -199,6 +242,16 @@
                 <img src="../../assets/icons/location_simple.svg" alt="Locatie icon">
                 <p>Str. Alexandritu 18</p>
             </div>
+        </div>
+
+        <div class="footer-schedule">
+            <h3>Orar</h3>
+            <div class="footer-schedule-items">
+            <p><span>Luni - Vineri: </span>9:00 - 22:00</p>
+            <p><span>Sâmbătă: </span>12:00 - 24:00</p>
+            <p><span>Duminică: </span>10:00 - 23:00</p>
+            <p><span>Sărbători: </span>închis</p>
+        </div>
         </div>
     </div>
     <div class="copyright">

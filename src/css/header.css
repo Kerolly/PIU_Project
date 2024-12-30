@@ -1,4 +1,7 @@
 /* -- MOBILE STYLE -- */
+.top-nav, .desktop-nav-bar{
+    display: none !important;
+}
 .logo h2 {
     margin-bottom: 0px;
     padding-bottom: 0;
@@ -164,7 +167,107 @@ header>hr.active {
 }
 
 
-/* -- SMALL TABLETS -- */
-@media screen and (min-width: 620px){
+/* -- LARGE TABLETS & LAPTOPS -- */
+@media screen and (min-width: 810px){
+
+    /* -- Navigation -- */
+
+    .top-nav{
+        display: flex !important;
+    }
+
+    .desktop-nav-bar{
+        display: block !important;
+    }
+
+    .navigation, .mobile-hr{
+        display: none;
+    }
+
+    header{
+        position: relative;
+        padding: 0;
+    }
+
+    .hero-img img, .hero-img::after{
+        top: auto !important;
+    }
+
+    .top-nav{
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top-nav img{
+        height: 40px;
+    }
+
+    .top-nav-contact{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .top-nav-location{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .desktop-nav-bar > hr{
+        width: calc(100% + 110px);
+        padding: 0;
+        margin: 0 -55px;
+        border: 2px solid var(--grey-color);
+        z-index: 1;
+    }
+
+    .desktop-nav-bar{
+        height: 55px;
+    }
+
+    .desktop-nav-bar-content>ul>li{
+        list-style: none;
+        font-size: 18px;
+        font-weight: 600;
+        position: relative;
+    }
+
+    .desktop-nav-bar-content>ul{
+        display: flex;
+        height: 55px;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desktop-nav-items a::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: -18px;
+        left: 0;
+        background-color: var(--accent-color);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+        z-index: 2;
+
+    }
+
+    .desktop-nav-items a:hover::before,
+    .desktop-nav-items a:focus::before {
+        transform: scaleX(1);
+    }
+
+    .desktop-nav-items a.active::before{
+        transform: scaleX(1);
+    }
+
+    
 
 }

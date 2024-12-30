@@ -125,7 +125,7 @@ button.active{
 
 
 /* -- LARGE TABLETS & LAPTOPS -- */
-@media screen and (min-width: 960px){
+@media screen and (min-width: 810px){
     body{
         padding: 0 55px;
     }

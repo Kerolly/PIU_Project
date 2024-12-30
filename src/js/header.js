@@ -1,3 +1,5 @@
+//---MOBILE---
+
 // All links from menu
 const menuLinks = document.querySelectorAll('.off-screen-menu ul li a');
 
@@ -22,4 +24,17 @@ hamMenu.addEventListener('click', () => {
     hamMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('active');
     horizontalLine.classList.toggle('active');
+})
+
+
+//---DESKTOP---
+
+const desktopMenuLinks = document.querySelectorAll('.desktop-nav-items a');
+
+desktopMenuLinks.forEach(link => {
+    if (link.getAttribute('href').split('/').pop() === currentPage) {
+        link.classList.add('active');
+    } else{
+        link.classList.remove('active');
+    }
 })
