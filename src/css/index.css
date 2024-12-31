@@ -52,6 +52,14 @@
     display: none;
 }
 
+.specialty-img img:nth-child(3){
+    display: none;
+}
+
+.specialty-img img:nth-child(4){
+    display: none;
+}
+
 .specialty-img img {
     width: 80%;
     margin-top: 70px;
@@ -290,6 +298,10 @@ input[type=submit] {
 
 
 /* -- Footer -- */
+
+.footer-schedule{
+    display: none;
+}
 
 footer {
     width: calc(100% + 60px);
