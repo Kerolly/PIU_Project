@@ -76,3 +76,7 @@ header{
     text-align: center;
     margin-bottom: 30px;
 }
+
+.story-text p{
+    font-size: 17px;
+}
