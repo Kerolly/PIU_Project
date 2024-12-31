@@ -1,0 +1,143 @@
+/* -- Footer -- */
+
+.footer-schedule{
+    display: none;
+}
+
+footer {
+    width: calc(100% + 60px);
+    height: 100%;
+    margin: 0 -30px;
+    background-color: #F1F2E4;
+}
+
+.footer-content {
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 60%;
+    text-align: center;
+
+}
+
+.footer-logo>p:nth-child(2) {
+    text-align: center;
+    margin-top: -15px;
+}
+
+.footer-menu>h3 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-contact div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-contact p{
+    margin: 0;
+    line-height: 24px;
+}
+
+.footer-contact img{
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.footer-contact >h3{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.copyright{
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright p:nth-child(1){
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.copyright p:nth-child(2){
+    font-weight: 600;
+}
+
+/* -- SMALL TABLETS -- */
+@media screen and (min-width: 620px){
+
+    footer{
+        width: calc(100% + 80px);
+        margin: 0 -40px;
+    }
+}
+
+/* -- LARGE TABLETS & LAPTOPS -- */
+@media screen and (min-width: 810px){
+    /* Footer */
+
+    .footer-content{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-logo, .footer-contact, .footer-menu{
+        flex: 1;
+    }
+
+    .footer-menu, .footer-contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    footer {
+        width: calc(100% + 110px);
+        margin: 0 -55px;
+    }
+
+}
+
+
+/* -- DESKTOP -- */
+@media screen and (min-width: 1440px){
+    /* Footer */
+
+    .footer-content{
+        padding: 20px 55px;
+    }
+
+    .footer-schedule{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+    }
+
+    .footer-schedule > h3{
+        margin-top: 35px;
+    margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .footer-schedule-items>p{
+        margin-bottom: 8px !important;
+    }
+
+    .footer-schedule-items>p>span{
+        font-weight: 600;
+    }
+
+}
