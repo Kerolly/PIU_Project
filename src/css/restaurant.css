@@ -1,18 +1,20 @@
-/* Override CSS rule from base.css & header.css */
+/* Override CSS rule from base.css & header.css & footer.css */
 
-body{
+/* base.css */
+body {
     margin: 0 auto;
     padding: 0;
     max-width: 1920px;
 }
 
-header{
+/* header.css */
+header {
     max-width: 1920px;
     margin: 0 auto;
-    
+
 }
 
-.desktop-nav-bar > hr{
+.desktop-nav-bar>hr {
     width: auto;
     margin: 0;
 }
@@ -22,17 +24,25 @@ header{
 
 }
 
-.logo h2, .logo p{
+.logo h2,
+.logo p {
     color: var(--black-color);
 }
 
-.ham-menu span{
+.ham-menu span {
     background-color: var(--black-color);
+}
+
+/* footer.css */
+
+footer {
+    width: 100%;
+    margin: 0;
 }
 
 /* -- Hero -- */
 
-.hero img{
+.hero img {
     position: relative;
     margin-top: 87px;
     width: 100%;
@@ -41,7 +51,7 @@ header{
     object-position: right;
 }
 
-.hero::after{
+.hero::after {
     content: "";
     position: absolute;
     top: 87px;
@@ -54,29 +64,196 @@ header{
 
 /* Story */
 
-.story{
+.story {
     background-image: url(../../assets/img/restaurant/bg-img.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
-    
+
 }
 
 .story-img img {
     display: none;
 }
 
-.story-content{
+.story-content {
     padding: 90px 20px;
 }
 
-.story-text h1{
+.story-text h1 {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.story-text p{
+.story-text p {
     font-size: 17px;
+}
+
+/* Call to action */
+
+.call-to-action {
+    position: relative;
+}
+
+.call-to-action-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.call-to-action-img {
+    position: relative;
+}
+
+.call-to-action-img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: rgba(23, 25, 27, 0.70);
+    ;
+}
+
+.call-to-action button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.call-to-action button {
+    width: 60%;
+    border: 1px solid var(--accent-color);
+    background-color: transparent;
+    max-width: 450px;
+    font-size: 17px;
+}
+
+.call-to-action button:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Specialty */
+
+.specialty {
+    background-image: url(../../assets/img/restaurant/bg-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.specialty-img img {
+    display: none;
+}
+
+.specialty-content {
+    padding: 90px 20px;
+}
+
+.specialty-text h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.specialty-text p {
+    font-size: 17px;
+}
+
+/* -- LARGE TABLETS & LAPTOPS -- */
+@media screen and (min-width: 810px) {
+
+    /* Hero */
+    .hero img {
+        margin-top: 0;
+    }
+
+    .hero::after {
+        top: auto;
+    }
+
+    /* Story */
+    .story-img img {
+        display: inline;
+        width: 315px;
+
+    }
+
+    .story-content {
+        display: flex;
+        justify-content: start;
+        gap: 65px;
+    }
+
+    /* Specialty */
+    .specialty-img img {
+        display: inline;
+        width: 315px;
+
+    }
+
+    .specialty-content {
+        display: flex;
+        justify-content: start;
+        gap: 65px;
+    }
+}
+
+
+/* -- DESKTOP -- */
+@media screen and (min-width: 1440px){
+
+    /* Story */
+
+    .story-content{
+        padding-left: 70px;
+        padding-right: 70px;
+        gap: 240px;
+    }
+
+    .story-img img{
+        width: 420px;
+        max-height: 450px;
+    }
+
+    .story-text h1{
+        margin-bottom: 50px;
+    }
+
+    /* Call-to-action */
+
+    .call-to-action-img img{
+        height: 350px;
+    }
+
+    .call-to-action-img::after{
+        height: 350px;
+    }
+
+     /* Specialty */
+
+.specialty-content{
+        padding-left: 70px;
+        padding-right: 70px;
+        gap: 240px;
+    }
+
+    .specialty-img img{
+        width: 420px;
+        max-height: 450px;
+    }
+
+    .specialty-text h1{
+        margin-bottom: 50px;
+    }
 }
