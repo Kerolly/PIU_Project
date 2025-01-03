@@ -76,6 +76,7 @@ footer {
 }
 
 .hero-text{
+    max-width: 1920px;
     position: absolute;
     top: 0;
     width: 100%;
@@ -97,10 +98,6 @@ footer {
     gap: 75px;
 }
 
-
-.breakfast{
-    grid-column: 2/7;
-}
 
 .menu>img{
     position: relative;
@@ -139,6 +136,11 @@ footer {
     width: 100%;
     min-width: 280px;
     max-width: 310px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover{
+    transform: translateY(-10px);   
 }
 
 .menu-item h3{
@@ -152,9 +154,26 @@ footer {
     z-index: 3;
 }
 
+.menu{
+    background-image: url(../../assets/icons/rosii_frunze_bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
 
 /* -- LARGE TABLETS & LAPTOPS -- */
 @media screen and (min-width: 810px){
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 20px;
+        row-gap: 70px;
+    }
 
     .hero-img img{
         margin-top: 0;
@@ -162,6 +181,96 @@ footer {
 
     .hero-text{
         height: 200px;
+    }
+
+    /* Menu */
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item{
+        width: 100%;
+        min-width: 0;
+        max-width: 320px;
+    }
+
+    .menu-content{
+        padding: 150px 50px;
+    }
+
+    .breakfast{
+        grid-row: 1;
+        grid-column: 1/6;
+    }
+
+    .soup{
+        grid-row: 1;
+        grid-column: 8/13;
+    }
+
+    .main-dish{
+        grid-row: 2;
+        grid-column: 1/6;
+    }
+
+    .pizza{
+        grid-row: 2;
+        grid-column: 8/13;
+    }
+
+    .desert{
+        grid-row: 3;
+        grid-column: 1/6;
+    }
+
+    .drink{
+        grid-row: 3;
+        grid-column: 8/13;
+    }
+
+}
+
+
+/* -- DESKTOP -- */
+@media screen and (min-width: 1440px){
+
+   
+
+    .menu-content{
+        padding: 100px 70px 150px;
+    }
+
+    .breakfast{
+        grid-row: 1;
+        grid-column: 1/4;
+    }
+
+    .soup{
+        grid-row: 1;
+        grid-column: 5/8;
+    }
+
+    .main-dish{
+        grid-row: 1;
+        grid-column: 9/13;
+    }
+
+    .pizza{
+        grid-row: 2;
+        grid-column: 1/4;
+    }
+
+    .desert{
+        grid-row: 2;
+        grid-column: 5/8;
+    }
+
+    .drink{
+        grid-row: 2;
+        grid-column: 9/13;
     }
 
 }
