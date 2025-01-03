@@ -1,0 +1,259 @@
+/* Override CSS rule from base.css & header.css & footer.css */
+
+/* base.css */
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1920px;
+}
+
+/* header.css */
+header {
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+
+.desktop-nav-bar>hr {
+    width: auto;
+    margin: 0;
+}
+
+.top-nav {
+    padding: 0 20px;
+
+}
+
+.logo h2,
+.logo p {
+    color: var(--black-color);
+}
+
+.ham-menu span {
+    background-color: var(--black-color);
+}
+
+/* footer.css */
+
+footer {
+    width: 100%;
+    margin: 0;
+}
+
+
+/* ----------------- */
+
+
+/* -- Reservation -- */
+
+.contact {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/img/rivior/contact-section-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.contact-content {
+    margin-top: 87px;
+    padding: 40px 30px 50px 30px;
+}
+
+.contact-table {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 50px 0;
+}
+
+.contact-table-content {
+    padding: 35px 22px;
+}
+
+.contact-table-content h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.contact-table-content p {
+    color: var(--white-color);
+    margin-bottom: 8px;
+}
+
+.thank-you {
+    text-align: center;
+}
+
+/* Form */
+
+#name {
+    width: 100%;
+}
+
+#phone {
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+}
+
+#date {
+    width: 100%;
+}
+
+form input, #textarea {
+    height: 35px;
+    margin-top: 25px;
+    border: 2px solid var(--white-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+#textarea{
+    height: 130px;
+    width: 100%;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: var(--white-color);
+    font-size: 20px;
+    font-family: var(--main-font), var(--fallback-font);
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+/* ----- */
+
+.schedule,
+.breakfast,
+.lunch-dinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.schedule-items>p>span {
+    font-weight: 600;
+}
+
+.contact>p {
+    margin: 0 30px;
+    margin-bottom: 50px;
+}
+
+
+/* -- SMALL TABLETS -- */
+@media screen and (min-width: 620px){
+
+    .contact-content{
+        padding: 40px 70px 50px 70px;
+    }
+
+    .contact-table-content p{
+        text-align: center;
+    }
+
+    .contact-table-content{
+        padding: 45px 50px;
+    }
+
+}
+
+
+/* -- LARGE TABLETS & LAPTOPS -- */
+@media screen and (min-width: 810px){
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 20px;
+    }
+
+    /*-- contact -- */
+
+    .contact-content{
+        margin: 0;
+        padding: 50px 55px;
+    }
+
+    .contact-table{
+        grid-row: 1;
+        grid-column: 3/10;
+        margin: 0;
+       
+    }
+
+    .schedule{
+        grid-row: 2;
+        grid-column: 1/6;
+        display: block;
+    }
+
+    .breakfast{
+        grid-row: 3;
+        grid-column: 1/6;
+        display: block;
+    }
+
+    .lunch-dinner{
+        grid-row: 3;
+        grid-column: 7/11;
+        display: block;
+    }
+
+    .contact-table-content{
+        padding: 30px 25px;
+    }
+
+}
+
+
+/* -- DESKTOP -- */
+@media screen and (min-width: 1440px){
+
+
+    .contact-content {
+        padding: 100px 70px;
+    }
+
+     /*contact*/
+
+     .contact-table{
+        grid-row: 1;
+        grid-column: 1/5;
+    }
+
+    .schedule{
+        margin: 0;
+        grid-row: 1;
+        grid-column: 7/10;
+    }
+
+    .breakfast {
+        
+        grid-row: 1;
+        grid-column: 7 / 10;
+        align-self: self-end;
+    }
+
+    .lunch-dinner {
+        grid-row: 1;
+        grid-column: 10 / 13;
+        align-self: self-end;
+    }
+
+    .contact>p{
+        margin-left: 70px;
+        margin-bottom: 0;
+        padding-bottom: 50px;
+    }
+
+}
