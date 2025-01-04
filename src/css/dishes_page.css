@@ -1,0 +1,258 @@
+/* Override CSS rule from base.css & header.css & footer.css */
+
+/* base.css */
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1920px;
+}
+
+/* header.css */
+header {
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+
+.desktop-nav-bar>hr {
+    width: auto;
+    margin: 0;
+}
+
+.top-nav {
+    padding: 0 20px;
+
+}
+
+.logo h2,
+.logo p {
+    color: var(--black-color);
+}
+
+.ham-menu span {
+    background-color: var(--black-color);
+}
+
+/* footer.css */
+
+footer {
+    width: 100%;
+    margin: 0;
+}
+
+
+/* --------------- */
+
+/* Hero */
+.hero-img {
+    position: relative;
+}
+
+.hero-img img {
+    margin-top: 87px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    z-index: 1;
+}
+
+
+.hero-img::after {
+    content: "";
+    position: absolute;
+    top: 87px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(23, 25, 27, 0.70);
+    z-index: 2;
+}
+
+.hero-text h1 {
+    margin: 0;
+    color: var(--white-color);
+    font-size: 40px;
+    font-weight: 600;
+    z-index: 3;
+}
+
+.hero-text {
+    max-width: 1920px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    margin-top: 87px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    position: relative;
+}
+
+.img-bounder img {
+    width: 100% !important;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+}
+
+/* -- Dishes -- */
+
+.dishes-right{
+    display: none;
+}
+
+.dishes{
+    background-image: url(../../assets/icons/rosii_frunze_bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.dishes-content {
+    padding: 0 25px;
+    margin-bottom: 150px;
+}
+
+.dishes-item {
+    display: flex;
+    margin-top: 100px;
+    max-width: 665px;
+    border-radius: 20px;
+    background: rgba(224, 224, 224, 0.40);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.flex-inverted{
+    flex-direction: row-reverse;
+
+}
+
+.flex-inverted img{
+    border-radius: 0px 20px 20px 0px !important;
+}
+
+.dishes-item img {
+    width: 115px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.dishes-item-price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dishes-item-text{
+    padding: 10px 15px;
+}
+
+.dishes-item-text h4{
+    margin-top: 15px;
+}
+
+.dishes-item-text p{
+    margin-top: 10px;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+
+/* -- Z FOLD -- */
+@media (min-width: 280px) and (max-width: 380px){
+
+    .dishes-item img{
+        width: 90px;
+    }
+
+    .dishes-item-price h3{
+        font-size: 14px;
+    }
+
+    .dishes-item-text h4{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+}
+
+
+/* -- SMALL TABLETS -- */
+@media screen and (min-width: 620px){
+
+    .img-bounder img{
+        opacity: 0;
+    }
+
+}
+
+
+/* -- LARGE TABLETS & LAPTOPS -- */
+@media screen and (min-width: 810px) {
+
+    .hero-img img {
+        margin-top: 0;
+        object-position: center;
+    }
+
+    .hero-text {
+        height: auto;
+    }
+
+    /* Dishes */
+
+    .dishes-content{
+        padding: 0 55px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 70px;
+    }
+
+    .dishes-right{
+        display: inline;
+        margin-top: 30px;
+    }
+
+    .side-bar{
+        top: 30px;
+        position: -webkit-sticky;  
+        position: sticky;
+    }
+
+    .side-bar h2{
+        margin-bottom: 15px;
+    }
+
+    .side-bar ul li{
+        list-style: none;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    
+
+}
+
+
+/* -- DESKTOP -- */
+@media screen and (min-width: 1440px){
+
+    .hero-img img, .hero-img::after{
+        height: 300px;
+    }
+
+    /* Dishes */
+
+    .dishes-content{
+        padding: 0 70px;
+        justify-content: space-evenly;
+    }
+
+}
