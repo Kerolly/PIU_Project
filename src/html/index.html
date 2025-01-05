@@ -157,15 +157,16 @@
                     </p>
                     <p class="thank-you">Vă mulțumim!</p>
 
-                    <form action="">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="c5bb57bf-3a1c-4d8c-9a71-935a2e18bb97">
 
-                        <input type="text" name="name" id="name" placeholder="Nume și prenume">
-                        <input type="tel" name="phone" id="phone" placeholder="Telefon">
+                        <input type="text" name="name" id="name" placeholder="Nume și prenume" required>
+                        <input type="tel" name="phone" id="phone" placeholder="Telefon" required>
                         <div class="form-item-row">
-                            <input type="number" name="persons" id="persons" placeholder="Persoane">
-                            <input type="time" name="time" id="time" placeholder="Ora">
+                            <input type="number" name="persons" id="persons" placeholder="Persoane" required>
+                            <input type="time" name="time" id="time" placeholder="Ora" required>
                         </div>
-                        <input type="date" name="date" id="date" placeholder="Data">
+                        <input type="date" name="date" id="date" placeholder="Data" required>
 
                         <input type="submit" id="button" value="Rezervă">
                     </form>

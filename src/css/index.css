@@ -260,6 +260,7 @@
 }
 
 form input {
+    padding-left: 5px;
     height: 35px;
     margin-top: 25px;
     border: 2px solid var(--white-color);
