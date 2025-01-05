@@ -1,0 +1,206 @@
+/* Override CSS rule from base.css & header.css & footer.css */
+
+/* base.css */
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1920px;
+}
+
+/* header.css */
+header {
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+
+.desktop-nav-bar>hr {
+    width: auto;
+    margin: 0;
+}
+
+.top-nav {
+    padding: 0 20px;
+
+}
+
+.logo h2,
+.logo p {
+    color: var(--black-color);
+}
+
+.ham-menu span {
+    background-color: var(--black-color);
+}
+
+/* footer.css */
+
+footer {
+    width: 100%;
+    margin: 0;
+}
+
+
+/* --------- */
+
+/* Hero */
+
+.hero {
+    display: none;
+    position: relative;
+}
+
+.hero-img {
+    position: relative;
+}
+
+.hero-img img {
+    margin-top: 87px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+.hero-img::after {
+    content: "";
+    position: absolute;
+    top: 87px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(23, 25, 27, 0.70);
+    z-index: 2;
+}
+
+.hero-text h1 {
+    margin: 0;
+    color: var(--white-color);
+    font-size: 40px;
+    font-weight: 600;
+    z-index: 3;
+}
+
+.hero-text {
+    max-width: 1920px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    margin-top: 87px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Person */
+
+.person {
+    margin-top: 87px;
+}
+
+.person-content {
+    padding: 100px 25px;
+}
+
+.person-img {
+    text-align: center;
+}
+
+.person-img img {
+    width: 80%;
+    border: 10px solid var(--primary-color);
+}
+
+.person-text {
+    margin-top: 50px;
+}
+
+.person-text h4 {
+    margin-bottom: 15px;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.instagram-icon, .facebook-icon, .linkedin-icon {
+    width: 20px;
+    height: 20px;
+    pointer-events: all;
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+.facebook-icon, .linkedin-icon{
+    margin-left: 10px;
+}
+
+
+/* -- SMALL TABLETS -- */
+@media screen and (min-width: 620px){
+
+    .person-img img{
+        width: 50%;
+    }
+
+}
+
+
+/* -- LARGE TABLETS & LAPTOPS -- */
+@media screen and (min-width: 810px) {
+
+    .hero {
+        display: inline;
+    }
+
+    .hero-img img {
+        margin-top: 0;
+    }
+
+    .hero-text {
+        height: auto;
+    }
+
+    /* Person */
+
+    .person-content{
+        padding: 50px 55px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+    .person-img{
+        flex: 1;
+        
+    }
+
+    .person-text{
+        flex: 1;
+        margin: 0;
+    }
+
+    .person-img img{
+        width: 80%;
+        max-width: 400px;
+        position: sticky;
+        top: 25px;
+    }
+}
+
+
+
+/* -- DESKTOP -- */
+@media screen and (min-width: 1440px) {
+
+    .person{
+        margin: 0;
+    }
+
+    .person-content{
+        padding: 150px 70px;
+    }
+
+}
