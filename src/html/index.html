@@ -107,7 +107,7 @@
                 Într-un decor elegant și contemporan, meniul nostru te invită să savurezi preparate emblematice precum
                 file de vită cu mousse de trufe și sos demi-glace, fiecare creat cu o atenție meticuloasă la detalii. La
                 Rivior, fiecare masă este o poveste rafinată, creată special pentru a celebra momentele deosebite.</p>
-            <button>Alfă mai multe</button>
+            <button onclick="window.location.href='../html/restaurant.html'">Alfă mai multe</button>
         </div>
 
     </section>
@@ -116,7 +116,8 @@
         <div class="call-to-action-img">
             <img src="../../assets/img/rivior/call-to-action.jpeg" alt="Poza cu mancare">
         </div>
-        <button>Rezervă o masă</button>
+        <button onclick="document.getElementById('rezerva').scrollIntoView({ behavior: 'smooth' });">Rezervă o
+            masă</button>
     </section>
 
 
@@ -145,10 +146,10 @@
 
             </div>
         </div>
-        <button>Descoperă întregul meniu</button>
+        <button onclick="window.location.href='../html/meniu.html'">Descoperă întregul meniu</button>
     </section>
 
-    <section class="rezervation">
+    <section class="rezervation" id="rezerva">
         <div class="rezervation-content grid">
             <div class="reservation-table">
                 <div class="reservation-table-content">
@@ -232,28 +233,30 @@
             <h3>Contact</h3>
             <div class="email">
                 <img src="../../assets/icons/email.svg" alt="Email icon">
-                <p mailto="comenzi@rivior.com">comenzi@rivior.com</p>
+                <a href="mailto:comenzi@rivior.com">comenzi@rivior.com</a>
             </div>
 
             <div class="phone">
                 <img src="../../assets/icons/phone.svg" alt="Telefon icon">
-                <p tel="0770211026">+40 770 211 026</p>
+                <a href="tel:+40770211026">+40 770 211 026</a>
             </div>
 
             <div class="location">
                 <img src="../../assets/icons/location_simple.svg" alt="Locatie icon">
-                <p>Str. Alexandritu 18</p>
+                <a target="_blank"
+                    href="https://www.google.com/maps/place/Strada+Vasile+Alecsandri+18,+Oradea/@47.0535776,21.9301495,17z/data=!3m1!4b1!4m6!3m5!1s0x474647ef53ec5765:0x6e507a97965e7fae!8m2!3d47.0535776!4d21.9327244!16s%2Fg%2F11qh22tq52?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">Str.
+                    Alexandritu 18</a>
             </div>
         </div>
 
         <div class="footer-schedule">
             <h3>Orar</h3>
             <div class="footer-schedule-items">
-            <p><span>Luni - Vineri: </span>9:00 - 22:00</p>
-            <p><span>Sâmbătă: </span>12:00 - 24:00</p>
-            <p><span>Duminică: </span>10:00 - 23:00</p>
-            <p><span>Sărbători: </span>închis</p>
-        </div>
+                <p><span>Luni - Vineri: </span>9:00 - 22:00</p>
+                <p><span>Sâmbătă: </span>12:00 - 24:00</p>
+                <p><span>Duminică: </span>10:00 - 23:00</p>
+                <p><span>Sărbători: </span>închis</p>
+            </div>
         </div>
     </div>
     <div class="copyright">
